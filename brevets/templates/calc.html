@@ -124,6 +124,14 @@
               var open_time_field = control.find("input[name='open']");
               var close_time_field = control.find("input[name='close']");
 
+            // ----------------------------------------------------------------
+
+              var dist = $("#brevet_dist_km").val();
+             
+              var start = $("#begin_date").val();               
+
+            // -----------------------------------------------------------------
+              
               $.getJSON(TIME_CALC_URL, {km: km}).done(
                 function(data) {
                    var times = data.result;
