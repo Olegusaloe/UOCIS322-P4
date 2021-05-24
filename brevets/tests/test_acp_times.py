@@ -48,4 +48,4 @@ def test_600():
 
 def test_1000():
     assert open_time(1000, 1000, time).format('YYYY-MM-DDTHH:mm') == '2000-01-02T09:05'
-    assert close_time(1000, 1000, time).format('YYYY-MM-DDTHH:mm') == '2021-01-04T03:00'
+    assert close_time(1000, 1000, time).format('YYYY-MM-DDTHH:mm') == '2000-01-04T03:00'
