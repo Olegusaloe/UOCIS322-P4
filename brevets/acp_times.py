@@ -63,15 +63,15 @@ def open_time(control_dist_km, brevet_dist_km, brevet_start_time):
 
     if control_dist_km >= brevet_dist_km:
        
-       if brevet_dist_km = 200:
+       if brevet_dist_km == 200:
           h = val(200)
-       elif brevet_dist_km = 300:
+       elif brevet_dist_km == 300:
           h = val(300)
-       elif brevet_dist_km = 400:
+       elif brevet_dist_km == 400:
           h = val(400)
-       elif brevet_dist_km = 600:
+       elif brevet_dist_km == 600:
           h = val(600)
-       elif brevet_dist_km = 1000:
+       elif brevet_dist_km == 1000:
           h = val(1000)
  
     else:  
@@ -145,18 +145,18 @@ def close_time(control_dist_km, brevet_dist_km, brevet_start_time):
 
     if control_dist_km >= brevet_dist_km:
        
-       if brevet_dist_km = 200:
+       if brevet_dist_km == 200:
           h = 13.5
-       elif brevet_dist_km = 300:
+       elif brevet_dist_km == 300:
           h = 20
-       elif brevet_dist_km = 400:
+       elif brevet_dist_km == 400:
           h = 27
-       elif brevet_dist_km = 600:
+       elif brevet_dist_km == 600:
           h = 40
-       elif brevet_dist_km = 1000:
+       elif brevet_dist_km == 1000:
           h = 75
 
-     else:  
+    else:  
       
       if control_dist_km < 200:
          h = control_dist_km / 15

@@ -38,6 +38,14 @@ def test_200():
 	assert open_time(60, 200, time).format('YYYY-MM-DDTHH:mm') == '2000-01-01T01:46'
     assert close_time(60, 200, time).format('YYYY-MM-DDTHH:mm') == '2000-01-01T04:00'
 
+def test_300():
+    assert open_time(100, 300, date).format('YYYY-MM-DDTHH:mm') == '2000-01-01T02:56'
+    assert close_time(100, 300, date).format('YYYY-MM-DDTHH:mm') == '2000-01-01T06:40'
+
 def test_600(): 
 	assert open_time(500, 600, time).format('YYYY-MM-DDTHH:mm') == '2000-01-01T15:28'
     assert close_time(500, 600, time).format('YYYY-MM-DDTHH:mm') == '2000-01-01T09:20'
+
+def test_1000():
+    assert open_time(1000, 1000, time).format('YYYY-MM-DDTHH:mm') == '2000-01-02T09:05'
+    assert close_time(1000, 1000, time).format('YYYY-MM-DDTHH:mm') == '2021-01-04T03:00'
